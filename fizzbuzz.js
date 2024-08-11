@@ -8,7 +8,10 @@
  * - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
  */
 
+
+// IMPRIMIMOS LOS NUMEROS DEL 1 - 100 CON UN BUCLE FOR 
 for(let i = 1; i <= 100; i++){
+    // CONDICIONAMOS LO QUE SE IMPRIMIRA EN CONSOLA SEGÚN PIDE EL RETO
     if(i % 3 == 0 && i % 5 == 0){
         console.log("fizzbuzz");
     }else if(i % 3 == 0){
