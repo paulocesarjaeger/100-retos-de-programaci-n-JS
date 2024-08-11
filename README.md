@@ -19,12 +19,3 @@ Here is a list of some of the challenges included in this repository:
 6. ...and many more!
 
 You can find the complete list of challenges in the Challenges directory.
-
-## Installation
-
-To get started with this repository, clone it to your local machine using the following command:
-
-```bash
-git clone https://github.com/your-username/100-js-challenges.git
-cd 100-js-challenges
-
