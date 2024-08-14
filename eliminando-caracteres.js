@@ -6,7 +6,7 @@
  * - out2 contendrá todos los caracteres presentes en la str2 pero NO
  *   estén presentes en str1.
  */
-
+ 
 
 function compararCadenas(str1,str2){
 
