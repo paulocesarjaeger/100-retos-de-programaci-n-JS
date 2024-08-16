@@ -5,7 +5,7 @@
  * al respecto.
  */
 
-function numeroAmstrong(num){
+function numeroAmastrong(num){
 
     // CONVERTIMOS EL NUMERO A STRING PARA PODER RECORRERLO
     let digitos = num.toString();
@@ -15,14 +15,15 @@ function numeroAmstrong(num){
     for(let digito of digitos){
         // ELEVAMOS LA BASE AL EXPONENTE
         suma += Math.pow(parseInt(digito), numeroDeDigitos);
+
+        return suma === num;
     };
-    return suma === num;
 };
 
+// VAMOS A ENCCONTRAR LOS NUMEROS DE AMSTRONG DESDE EL 100 AL 10000
 
 for (let i = 100; i < 10000; i++){
-    if( numeroAmstrong(i)){
+    if(numeroAmastrong(i)){
         console.log(i);
     };
-
 };
