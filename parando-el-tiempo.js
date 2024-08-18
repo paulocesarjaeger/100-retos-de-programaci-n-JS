@@ -25,5 +25,5 @@ function sumarConRetraso(num1,num2,segundos){
 // COMPROBAMOS
 
 sumarConRetraso(5,10,3).then((resultado) => {
-    console.log(`Resultado: ${resultado}`);
-});
+    console.log(`Resultado:`)
+})
