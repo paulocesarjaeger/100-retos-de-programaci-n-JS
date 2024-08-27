@@ -14,7 +14,7 @@ function cuentaAtras(inicio, intervalo){
     }
 
     const countDown = setInterval(() => {
-        console.log(inicio); 
+        console.log(inicio);
         inicio--;
 
         if(inicio < 0) {
