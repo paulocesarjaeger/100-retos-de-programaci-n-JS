@@ -30,4 +30,4 @@ function pasoTres(){
 pasoUno()
     .then(pasoDos)
     .then(pasoTres)
-    .then(() => console.log('Todos los pasos completados'));
+    .then(() => console.log('Todos los pasos completados'))
