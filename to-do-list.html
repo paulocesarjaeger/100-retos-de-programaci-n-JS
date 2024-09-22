@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <header>
+        <h1>TO DO LIST</h1>
+    </header>
+    <main>
+        <input type="text" id="tarea"></input>
+        <button id="btn_crear">CREAR</button>
+    </main>
+
+    <script >
+        const input = document.getElementById('tarea');
+        const btnCrear = document.getElementById('btn_crear');
+        const cuerpo = document.querySelector('     main    ');
+
+        const crearTarea = ()   => {
+        const tareaTexto = input    .value.trim ();
+
+        if(tareaTexto !== ''){
+            const tareaContenedor = document.createElement('div');
+            tareaContenedor.classList.add('tarea_contenedor');
+
+            const tareaParafo = document.createElement('p');
+            tareaContenedor.textContent = tareaTexto;
+            tareaContenedor.appendChild(tareaParafo);
+
+            const btnBorrar = document.createElement('div');
+            btnBorrar.classList.add('btn_borrar');
+            btnBorrar.textContent = 'X';
+            tareaContenedor.appendChild(btnBorrar);
+
+            cuerpo.appendChild(tareaContenedor);
+
+            input.value = '';
+
+            btnBorrar.addEventListener('click',() => {
+            cuerpo.removeChild(tareaContenedor);
+        });
+        input.focus();
+    };
+};
+
+
+        btnCrear.addEventListener('click',crearTarea);
+        
+        input.addEventListener('keypress', (e)=>{
+            if(e.key === 'Enter'){
+                crearTarea();
+            };
+        })
+    </script>
+</body>
+</html>
