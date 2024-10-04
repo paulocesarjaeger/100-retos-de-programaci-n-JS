@@ -22,3 +22,7 @@ function verificarCursoActual(){
 };
 
 verificarCursoActual();
+
+// SI QUIERES QUE EL PROGRAMA VERIFIQUE TUS CURSOS CADA CIERTO TIEMPO
+
+setInterval(verificarCursoActua,3600000); //VERIFICA CADA HORA.
